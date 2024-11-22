@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: cursive;
+        }
+        
+    </style>
+</head>
+<body>
+    <h3>ONBOARDING FORM</h3>
+    <fieldset>
+    <form action="Form.php" method="POST">
+        
+      <br><label for="">NAMES</label>
+      <input type="text" name="name" placeholder="PLEASE ENTER YOUR NAMES" required><br>
+
+      <br><label for="">PASSWORD</label>
+      <input type="password" maxlength="5" placeholder="PLEASE ENTER YOUR PASSWORD" required><br>
+
+      <br><label for="">DATE OF BIRTH</label>
+      <input type="date" name="date" required><br>
+
+      <br><label for="">EMAIL</label>
+      <input type="email" name="email" placeholder="PLEASE INSERT YOUR EMAIL" required><br>
+
+      <br><label for="">RATE US</label>
+      <input type="range"><br>
+
+      <br><label for="">APPERANCE</label>
+      <input type="color" placeholder="Pick color for your profile"><br>
+
+      <br><label for="">PAYMENT MODE</label>
+      <select type="text">
+         <option value="">Payment mode</option>
+         <option value="">Credit card</option>
+         <option value="">Debit card</option>
+         <option value="">Master card</option>
+         <option value="">Visa card</option>
+      </select><br>
+
+      <br><label for="">COMMENT</label>
+      <textarea type="text" name="comment" cols="40px" rows="5" maxlength="15" placeholder="YOUR COMMENT IS OUR PRIDE" required></textarea><br>
+
+      <br><label for=""></label>
+      <input type="submit"><br>
+
+    </form>
+    </fieldset>
+</body>
+</html>
+
+
+<!-- <?php
+if($_SERVER['REQUEST_METHOD']== ("post") ){
+    $name=$_POST['name'];
+    $date=$_POST['date'];
+    $email=$_POST['email'];
+    $comment=$_POST['comment'];
+
+    echo "<h1>GIVEN DATA</h1>";
+    echo '<table border="1px">';
+    echo "<tr><th>NAMES</th></tr>";
+    echo "<tr><th>DATE OF BIRTH</th>$</tr>";
+    echo "<tr><th>EMAIL</th></tr>";
+    echo "<tr><th>COMMENT</th></tr>";
+    echo "<tr><td>$name</td></tr>";
+    echo "<tr><td>$date</td></tr>";
+    echo "<tr><td>$email</td></tr>";
+    echo "<tr><th>$comment</th></tr>";
+    echo "</table>";
+   
+}
+?> -->
